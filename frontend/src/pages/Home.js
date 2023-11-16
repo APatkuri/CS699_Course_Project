@@ -28,7 +28,7 @@ export const Home = () => {
     }); 
     };
 
-
+    
   useEffect(() => {
     Axios.get("http://localhost:3001/login-session").then((response) => {
         console.log(response);
@@ -43,7 +43,7 @@ export const Home = () => {
   }, []);
 
   return (
-
+    
     <div>
         {/* <h2>Employee Management System</h2> */}
     {loginStatus ? 
@@ -68,7 +68,6 @@ export const Home = () => {
             (<></>)
         :   
             (<>
-          <h2>Employee Management System</h2>
           <Login1/>
           </>)}
     </div>
